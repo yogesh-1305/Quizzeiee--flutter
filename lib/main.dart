@@ -67,8 +67,11 @@ class _QuizPageState extends State<QuizPage> {
               style: TextStyle(color: Colors.white, fontSize: 20),
             ),
             onPressed: () {
+             setState(() {
+                questionNumber = 0;
+                iconList = [];
+              });
               Navigator.pop(context);
-            },
             width: 120,
           )
         ],
