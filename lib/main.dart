@@ -56,7 +56,7 @@ class _QuizPageState extends State<QuizPage> {
     if (questionNumber >= quizQuestions.length() - 1) {
       Alert(
         context: context,
-        type: AlertType.error,
+        type: AlertType.success,
         title: "All Questions Done!",
         desc: "You've reached the end of the questions!",
         buttons: [
